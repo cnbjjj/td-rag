@@ -1,0 +1,24 @@
+name: td-rag
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - faiss-cpu==1.11.0
+      - sentence-transformers==4.1.0
+      - huggingface-hub
+      - fastapi==0.115.12
+      - uvicorn==0.34.2
+      - gradio==5.29.0
+      - requests
+      - numpy
+      - pandas
+      - scikit-learn
+      - transformers==4.51.3
+      - pydantic
+      - torch
+      - torchvision
+      - beautifulsoup4
+      - tqdm
