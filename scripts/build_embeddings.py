@@ -40,8 +40,12 @@ def main(chunks_path, index_path, metadata_path, embedding_model):
     vectors = build_index(chunks, embedding_model)
 
     print("Building FAISS index...")
+    # dim = vectors.shape[1]
+    # index = faiss.IndexFlatL2(dim) # Flat
     dim = vectors.shape[1]
-    index = faiss.IndexFlatL2(dim)
+    index = faiss.IndexHNSWFlat(dim, 32) # HNSW
+    index.hnsw.efConstruction = 200
+    index.hnsw.efSearch = 64
     index.add(np.array(vectors))
 
     print(f"Saving index to {index_path}")

@@ -14,9 +14,9 @@ CHUNKS_DIR = CLEANED_DIR / "docs"
 CHUNKED_JSONL_FILE = CHUNKS_DIR / "chunks.jsonl"
 
 DEFAULT_EMBEDDING_MODEL = "all-MiniLM-L6-v2" # all-MiniLM-L6-v2 all-mpnet-base-v2
-DEFUALT_INDEX_NAME = "td_index.faiss"
+DEFUALT_INDEX_NAME = "td_index_mini_hnsw_l2.faiss"
 DEFAULT_INDEX_PATH = MODEL_DIR / DEFUALT_INDEX_NAME
-DEFAULT_METADATA_NAME = "td_metadata.json"
+DEFAULT_METADATA_NAME = "td_metadata_mini_hnsw_l2.json"
 DEFAULT_METADATA_PATH = MODEL_DIR / DEFAULT_METADATA_NAME
 
 DEFAULT_OLLAMA_MODEL = "deepseek-r1:7b"
