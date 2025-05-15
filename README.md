@@ -63,6 +63,11 @@ Then visit [http://127.0.0.1:7860](http://127.0.0.1:7860) in your browser.
 
 ![alt text](image-gradio.png)
 
+Alternatively, you can try a simplified FAISS retrieval demo online (semantic search only, without LLM reasoning):  
+[TouchDesigner Wiki Search (Hugging Face Space)](https://huggingface.co/spaces/imjj/td-rag-sapce)
+
+![alt text](image-hfspace.png)
+
 ---
 
 #### Use Inside TouchDesigner (Optional)
